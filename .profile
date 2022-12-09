@@ -61,10 +61,6 @@ nm-applet --indicator &
 lxpolkit &
 flameshot &
 numlockx &
-<<<<<<< HEAD
-=======
-openrgb --startminimized -p White &
->>>>>>> e96493a5cb87f9ab5c41ad2d65556fe216de5ae3
 kdeconnect-app &
 openrgb --startminimized -p White &
 
