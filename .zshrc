@@ -1,7 +1,6 @@
 # aliases
 alias vim='lvim'
 alias pvpn='sudo protonvpn'
-alias config='/usr/bin/git --git-dir=/home/luke/.dotfiles/ --work-tree=/home/luke'
 alias reboot='/sbin/reboot'
 
 # path
