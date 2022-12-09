@@ -3,7 +3,7 @@ alias vim='lvim'
 alias pvpn='sudo protonvpn'
 alias reboot='/sbin/reboot'
 
-# path
+# PATH
 export PATH=~/.config/spicetify:$PATH
 export PATH="$PATH:$HOME/.local/bin"
 
