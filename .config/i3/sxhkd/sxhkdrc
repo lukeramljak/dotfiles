@@ -1,0 +1,104 @@
+super + Escape
+    pkill -USR1 -x sxhkd
+
+# Screenshots
+
+alt + shift + s
+	  flameshot gui
+
+# Rofi
+
+super + d
+    $HOME/.config/rofi/launchers/type-1/launcher.sh
+
+# Application Launchers
+
+super + {b,e,w,v}
+    {bitwarden-desktop,thunar,firefox,codium}
+
+#Audio Keybindings
+
+#XF86AudioRaiseVolume
+#amixer -c 1 -- sset Master 2db+
+
+#XF86AudioLowerVolume
+#    amixer -c 1 -- sset Master 2db-
+
+#XF86AudioMute
+#    amixer -c 1 -- sset Master toggle
+
+XF86AudioPlay
+    playerctl play-pause
+
+XF86AudioNext
+    playerctl next
+
+XF86AudioPrev
+    playerctl previous
+
+# change volume or toggle mute - for i3blocks
+XF86AudioRaiseVolume 
+    amixer -q -D pulse sset Master 5%+ && pkill -RTMIN+10 i3blocks 
+XF86AudioLowerVolume
+    amixer -q -D pulse sset Master 5%- && pkill -RTMIN+10 i3blocks
+XF86AudioMute
+    amixer -q -D pulse sset Master toggle && pkill -RTMIN+10 i3blocks
+
+#i3 Specific Keybindings
+
+#movement
+
+super+{Left,Down,Up,Right}
+    i3-msg focus {left,down,up,right}
+
+super+shift+{Left,Down,Up,Right}
+    i3-msg move {left,down,up,right}
+
+super + {z,x}
+    i3-msg split {v,h}
+
+super + f
+    i3-msg fullscreen toggle
+
+super + shift + space
+    i3-msg floating toggle
+
+super + space
+    i3-msg focus mode_toggle
+
+super + a
+    i3-msg focus parent
+
+# workspaces
+
+super + {1-9,0}
+    i3-msg workspace {1-9,10}
+
+alt + {0,1,2,3,4,5,6,7,8,9}
+   i3-msg workspace {10,11,12,13,14,15,16,17,18,19}
+
+super + shift+{1-9,0}
+    i3-msg move container to workspace number {1-9,10}
+
+alt+shift+{0,1,2,3,4,5,6,7,8,9}
+    i3-msg move container to workspace number {10,11,12,13,14,15,16,17,18,19}
+
+super + q
+    i3-msg kill
+
+super + shift + c
+    i3-msg reload
+
+super + shift + r
+    i3-msg restart
+
+super + ctrl + {h,j,k,l}
+    i3-msg resize {grow width 1 px or 1 ppt, shrink height 1 px or 1 ppt, grow height 1 px or 1 ppt, shrink width 1 px or 1 ppt}
+
+
+
+super + Return
+    alacritty
+
+super + alt {h, n, r}
+    alacritty -e {htop, nvim, ranger}

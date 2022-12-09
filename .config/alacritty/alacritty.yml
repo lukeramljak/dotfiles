@@ -1,0 +1,67 @@
+window:
+  padding:
+    x: 8
+    y: 14
+  class:
+    instance: Alacritty
+    general: Alacritty
+  opacity: 1
+
+scrolling:
+  history: 10000
+  multiplier: 3
+
+font:
+  normal:
+    family: "JetBrainsMono Nerd Font"
+    style: Medium
+  bold:
+    family: "JetBrainsMono Nerd Font"
+    style: Bold
+  italic:
+    family: "JetBrainsMono Nerd Font"
+    style: Italic
+  bold_italic:
+    family: "JetBrainsMono Nerd Font"
+    style: BoldItalic
+  size: 11
+draw_bold_text_with_bright_colors: true
+
+selection:
+  save_to_clipboard: false
+
+shell:
+  program: /usr/bin/zsh
+
+key_bindings:
+  - {
+      key: Return,
+      mods: Super|Shift,
+      action: SpawnNewInstance
+    }
+colors:
+  # Default colors
+  primary:
+    background: '#1B1D1E'
+    foreground: '#F8F8F2'
+  # Normal colors
+  normal:
+    black: '#333333'
+    red: '#C4265E'
+    green: '#86B42B'
+    yellow: '#B3B42B'
+    blue: '#6A7EC8'
+    magenta: '#8C6BC8'
+    cyan: '#56ADBC'
+    white: '#E3E3DD'
+  # Bright colors
+  bright:
+    black: '#666666'
+    red: '#F92672'
+    green: '#A6E22E'
+    yellow: '#E2E22E'
+    blue: '#819AFF'
+    magenta: '#AE81FF'
+    cyan: '#66D9EF'
+    white: '#F8F8F2'
+theme: Molokai

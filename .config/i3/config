@@ -1,0 +1,21 @@
+include $HOME/.config/i3/theme.conf
+include $HOME/.config/i3/rules.conf
+include $HOME/.config/i3/workspaces.conf
+exec_always --no-startup-id $HOME/.config/i3/autostart.sh
+exec --no-startup-id dex --autostart --environment i3
+set $mod Mod4
+floating_modifier $mod
+set $fm DP-2
+set $sm DP-0
+font pango:monospace 8
+force_xinerama yes
+bindsym $mod+Shift+minus move scratchpad
+bindsym $mod+minus scratchpad show
+bindsym $mod+Shift+s layout stacking
+bindsym $mod+Shift+t layout tabbed
+bindsym $mod+Shift+e layout toggle split
+
+#bar {
+#    status_command SCRIPT_DIR=~/.config/i3blocks/scripts i3blocks
+#    font pango:JetBrainsMono Nerd Font Regular 8
+#}
