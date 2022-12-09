@@ -6,7 +6,6 @@ alias reboot='/sbin/reboot'
 # path
 export PATH=~/.config/spicetify:$PATH
 export PATH="$PATH:$HOME/.local/bin"
-export PATH=$HOME/.config/rofi/scripts:$PATH
 
 # extras
 source /usr/share/zsh-autosuggestions/zsh-autosuggestions.zsh
