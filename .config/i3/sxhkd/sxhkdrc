@@ -18,14 +18,14 @@ super + {b,e,w,v}
 
 #Audio Keybindings
 
-#XF86AudioRaiseVolume
-#amixer -c 1 -- sset Master 2db+
+XF86AudioRaiseVolume
+    pactl set-sink-volume @DEFAULT_SINK@ +10%
 
-#XF86AudioLowerVolume
-#    amixer -c 1 -- sset Master 2db-
+XF86AudioLowerVolume
+    pactl set-sink-volume @DEFAULT_SINK@ -10%
 
-#XF86AudioMute
-#    amixer -c 1 -- sset Master toggle
+XF86AudioMute
+    pactl set-sink-mute @DEFAULT_SINK@ toggle
 
 XF86AudioPlay
     playerctl play-pause
@@ -35,14 +35,6 @@ XF86AudioNext
 
 XF86AudioPrev
     playerctl previous
-
-# change volume or toggle mute - for i3blocks
-XF86AudioRaiseVolume 
-    amixer -q -D pulse sset Master 5%+ && pkill -RTMIN+10 i3blocks 
-XF86AudioLowerVolume
-    amixer -q -D pulse sset Master 5%- && pkill -RTMIN+10 i3blocks
-XF86AudioMute
-    amixer -q -D pulse sset Master toggle && pkill -RTMIN+10 i3blocks
 
 #i3 Specific Keybindings
 
