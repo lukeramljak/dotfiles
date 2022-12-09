@@ -63,5 +63,6 @@ flameshot &
 numlockx &
 kdeconnect-app &
 openrgb --startminimized -p White &
+~/.config/autostart/easyeffects-service.desktop &
 
 exec i3

@@ -5,8 +5,6 @@ killall picom
 while pgrep -u $UID -x picom >/dev/null; do sleep 1; done
 picom --vsync &
 
-~/.config/i3/polybar/launch.sh &
-
 nitrogen --restore &
 ~/.local/bin/autotiling &
 dunst &
