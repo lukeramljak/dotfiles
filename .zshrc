@@ -25,9 +25,8 @@ alias rm='rm -i'
 eval $(thefuck --alias)
 
 # PATH
-
-if [ -d "$HOME/.bin" ] ;
-  then PATH="$HOME/.bin:$PATH"
+if [ -d "$HOME/.local/bin" ] ;
+  then PATH="$HOME/.local/bin:$PATH"
 fi
 
 if [ -d "/var/lib/flatpak/exports/bin/" ] ;
