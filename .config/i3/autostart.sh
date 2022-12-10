@@ -9,6 +9,7 @@ picom --config ~/.config/picom/picom.conf &
 
 nitrogen --restore; sleep 1 &
 dunst &
+autotiling &
 unclutter &
 
 #sxhkd
