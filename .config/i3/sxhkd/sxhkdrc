@@ -4,7 +4,11 @@ super + Escape
 # Screenshots
 
 alt + shift + s
-	  flameshot gui
+	flameshot gui
+
+# lockscreen
+alt + shift + x
+    betterlockscreen -l blur
 
 # Rofi
 
