@@ -2,10 +2,27 @@
 alias vim='lvim'
 alias pvpn='sudo protonvpn'
 alias reboot='/sbin/reboot'
+alias shutdown='/sbin/shutdown'
+
+# Changing "ls" to "exa"
+alias ls='exa -a --color=always --group-directories-first'  # all files and dirs
+alias la='exa -al --color=always --group-directories-first' # my preferred listing
+alias ll='exa -l --color=always --group-directories-first'  # long format
+alias lt='exa -aT --color=always --group-directories-first' # tree listing
+alias l.='exa -a | egrep "^\."'
 
 # PATH
-export PATH=~/.config/spicetify:$PATH
-export PATH="$PATH:$HOME/.local/bin"
+if [ -d "$HOME/.config/spicetify" ] ;
+  then PATH="$HOME/.config/spicetify:$PATH"
+fi
+
+if [ -d "$HOME/.bin" ] ;
+  then PATH="$HOME/.bin:$PATH"
+fi
+
+if [ -d "/var/lib/flatpak/exports/bin/" ] ;
+  then PATH="/var/lib/flatpak/exports/bin/:$PATH"
+fi
 
 # extras
 source /usr/share/zsh-autosuggestions/zsh-autosuggestions.zsh
