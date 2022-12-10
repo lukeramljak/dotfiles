@@ -14,7 +14,7 @@ super + d
 # Application Launchers
 
 super + {b,e,w,v}
-    {bitwarden-desktop,thunar,firefox,codium}
+    {bitwarden,thunar,firefox,codium}
 
 #Audio Keybindings
 
