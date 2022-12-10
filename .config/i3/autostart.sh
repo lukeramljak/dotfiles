@@ -7,7 +7,7 @@ picom --config ~/.config/picom/picom.conf &
 
 ~/.config/i3/polybar/launch.sh &
 
-nitrogen --restore; sleep 1 &
+nitrogen --restore; do sleep 1 &
 ~/.local/bin/autotiling &
 dunst &
 unclutter &
