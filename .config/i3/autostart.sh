@@ -7,10 +7,9 @@ picom --config ~/.config/picom/picom.conf &
 
 ~/.config/i3/polybar/launch.sh &
 
-nitrogen --restore; do sleep 1 &
-~/.local/bin/autotiling &
+nitrogen --restore; sleep 1 &
 dunst &
 unclutter &
 
 #sxhkd
-sxhkd -c $HOME/.config/i3/sxhkd/sxhkdrc &
+sxhkd -c ~/.config/i3/sxhkd/sxhkdrc &
