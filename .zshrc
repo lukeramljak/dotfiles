@@ -21,12 +21,10 @@ alias cp="cp -i"
 alias mv='mv -i'
 alias rm='rm -i'
 
+# fix terminal mistakes
 eval $(thefuck --alias)
 
 # PATH
-if [ -d "$HOME/.config/spicetify" ] ;
-  then PATH="$HOME/.config/spicetify:$PATH"
-fi
 
 if [ -d "$HOME/.bin" ] ;
   then PATH="$HOME/.bin:$PATH"
@@ -34,6 +32,10 @@ fi
 
 if [ -d "/var/lib/flatpak/exports/bin/" ] ;
   then PATH="/var/lib/flatpak/exports/bin/:$PATH"
+fi
+
+if [ -d "$HOME/.config/spicetify" ] ;
+  then PATH="$HOME/.config/spicetify:$PATH"
 fi
 
 # extras
