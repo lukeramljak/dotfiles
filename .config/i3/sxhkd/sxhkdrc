@@ -7,7 +7,7 @@ alt + shift + s
 	flameshot gui
 
 # lockscreen
-alt + shift + x
+super + shift + x
     betterlockscreen -l blur
 
 # Rofi
