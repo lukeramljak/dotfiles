@@ -21,6 +21,7 @@ alias cp="cp -i"
 alias mv='mv -i'
 alias rm='rm -i'
 
+eval $(thefuck --alias)
 
 # PATH
 if [ -d "$HOME/.config/spicetify" ] ;
@@ -80,5 +81,4 @@ bindkey '^a' beginning-of-line
 bindkey '^e' end-of-line
 
 ZSH_AUTOSUGGEST_STRATEGY=(history completion)
-
 
