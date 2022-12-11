@@ -34,4 +34,6 @@ fi
 
 xrdb -merge ~/.Xresources &
 
+openrgb --startminimized -p White &
+
 exec i3
