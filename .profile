@@ -34,6 +34,8 @@ fi
 
 xrdb -merge ~/.Xresources &
 
+# load i2c-dev for RAM rgb
+sudo modprobe i2c-dev
 # load openrgb profile
 openrgb --startminimized -p White &
 
