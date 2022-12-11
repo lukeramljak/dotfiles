@@ -13,11 +13,6 @@ nm-applet --indicator &
 autotiling &
 flameshot &
 kdeconnect-app &
-easyeffects --gapplication-service &
-
-# keyboard layout/fix cursor
-setxkbmap -option caps:escape -option altwin:swap_alt_win &
-xsetroot -cursor_name left_ptr &
 
 # misc
 lxpolkit &
