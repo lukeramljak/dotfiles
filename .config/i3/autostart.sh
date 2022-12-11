@@ -14,7 +14,6 @@ autotiling &
 flameshot &
 kdeconnect-app &
 easyeffects --gapplication-service &
-openrgb -p White &
 
 # keyboard layout/fix cursor
 setxkbmap -option caps:escape -option altwin:swap_alt_win &
