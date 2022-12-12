@@ -15,7 +15,7 @@ flameshot &
 kdeconnect-app &
 
 # misc
-lxpolkit &
+/usr/bin/lxpolkit &
 numlockx &
 nitrogen --restore &
 dunst &
