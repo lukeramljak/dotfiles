@@ -7,7 +7,7 @@ floating_modifier $mod
 set $fm DP-2
 set $sm DP-0
 font pango:monospace 8
-force_xinerama yes
+force_xinerama no
 bindsym $mod+Shift+minus move scratchpad
 bindsym $mod+minus scratchpad show
 bindsym $mod+Shift+s layout stacking
