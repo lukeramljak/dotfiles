@@ -43,4 +43,7 @@ openrgb --startminimized -p White &
 setxkbmap -option caps:escape -option altwin:swap_alt_win &
 xsetroot -cursor_name left_ptr &
 
+# disable screen blanking
+xset s off &
+
 exec i3

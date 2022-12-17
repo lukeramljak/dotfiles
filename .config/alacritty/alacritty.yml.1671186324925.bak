@@ -58,57 +58,35 @@ key_bindings:
   - { key: Paste, mods: None, action: Paste }
   - { key: Copy, mods: None, action: Copy }
   - { key: L, mods: Control, action: ClearLogNotice }
-  - { key: L, mods: Control, chars: "\f" }
-  - {
-      key: PageUp,
-      mods: None,
-      action: ScrollPageUp,
-      mode: ~Alt
-    }
-  - {
-      key: PageDown,
-      mods: None,
-      action: ScrollPageDown,
-      mode: ~Alt
-    }
-  - {
-      key: Home,
-      mods: Shift,
-      action: ScrollToTop,
-      mode: ~Alt
-    }
-  - {
-      key: End,
-      mods: Shift,
-      action: ScrollToBottom,
-      mode: ~Alt
-    }
+  - { key: L, mods: Control, chars: "\x0c" }
+  - { key: PageUp, mods: None, action: ScrollPageUp, mode: ~Alt }
+  - { key: PageDown, mods: None, action: ScrollPageDown, mode: ~Alt }
+  - { key: Home, mods: Shift, action: ScrollToTop, mode: ~Alt }
+  - { key: End, mods: Shift, action: ScrollToBottom, mode: ~Alt }
 
 colors:
-  name: Count Von Count
-  author: Baskerville
+  # Default colors
   primary:
-    background: "#000000"
-    foreground: "#919191"
-  cursor:
-    text: "#000000"
-    cursor: "#919191"
+    background: "#1B1D1E"
+    foreground: "#F8F8F2"
+  # Normal colors
   normal:
-    black: "#303030"
-    red: "#c10023"
-    green: "#a83334"
-    yellow: "#b51d2c"
-    blue: "#8c4b46"
-    magenta: "#7d534f"
-    cyan: "#9a413d"
-    white: "#c6c6c6"
+    black: "#333333"
+    red: "#C4265E"
+    green: "#86B42B"
+    yellow: "#B3B42B"
+    blue: "#6A7EC8"
+    magenta: "#8C6BC8"
+    cyan: "#56ADBC"
+    white: "#E3E3DD"
+  # Bright colors
   bright:
-    black: "#5e5e5e"
-    red: "#ff8781"
-    green: "#ffa095"
-    yellow: "#ff948b"
-    blue: "#feb2aa"
-    magenta: "#ebbbb5"
-    cyan: "#ffaaa0"
-    white: "#ffffff"
-theme: Baskerville - Count Von Count
+    black: "#666666"
+    red: "#F92672"
+    green: "#A6E22E"
+    yellow: "#E2E22E"
+    blue: "#819AFF"
+    magenta: "#AE81FF"
+    cyan: "#66D9EF"
+    white: "#F8F8F2"
+theme: Molokai
