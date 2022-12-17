@@ -1,0 +1,2 @@
+#!/bin/sh
+adb-sync --reverse /sdcard/DCIM /mnt/Seagate/android
