@@ -46,4 +46,7 @@ xsetroot -cursor_name left_ptr &
 # disable screen blanking
 xset s off &
 
+# auto connect to VPN
+protonvpn-cli c -f &
+
 exec i3
