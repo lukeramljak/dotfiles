@@ -1,5 +1,4 @@
 # aliases
-alias vim='lvim'
 alias pvpn='sudo protonvpn'
 alias reboot='/sbin/reboot'
 alias shutdown='/sbin/shutdown'
