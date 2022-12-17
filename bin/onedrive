@@ -1,2 +1,0 @@
-#!/bin/bash
-sh -c "rclone --vfs-cache-mode writes mount OneDrive: ~/OneDrive/myosh"

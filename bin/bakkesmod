@@ -1,2 +1,0 @@
-#!/bin/sh
-WINEFSYNC=1 WINEPREFIX=/mnt/SSD/Games/Prefixes/rocketleague ~/.config/heroic/tools/wine/Wine-GE-Proton7-34/bin/wine c:/Program\ Files/BakkesMod/BakkesMod.exe

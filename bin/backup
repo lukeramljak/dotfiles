@@ -1,2 +1,0 @@
-#!/bin/sh
-rsync -avh --progress --delete --exclude={"/home/luke/.cache/*","/home/luke/Downloads/*","/home/luke/.local/Trash/*","/home/.steam/*"} /home /mnt/Seagate/backups
