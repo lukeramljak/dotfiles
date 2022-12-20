@@ -34,7 +34,7 @@ fi
 
 xrdb -merge ~/.Xresources &
 
-# openrgb - load profile
+# load openrgb profile
 openrgb --startminimized -p White &
 
 # keyboard layout/fix cursor
