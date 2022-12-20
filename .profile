@@ -34,8 +34,6 @@ fi
 
 xrdb -merge ~/.Xresources &
 
-# openrgb - load i2c-dev for other devices
-sudo modprobe i2c-dev &
 # openrgb - load profile
 openrgb --startminimized -p White &
 
