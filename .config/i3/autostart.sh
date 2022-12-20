@@ -12,7 +12,7 @@ nm-applet --indicator &
 # programs
 autotiling &
 flameshot &
-kdeconnect-app &
+# kdeconnect-app &
 
 # misc
 /usr/bin/lxpolkit &
