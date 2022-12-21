@@ -41,8 +41,11 @@ openrgb --startminimized -p White &
 setxkbmap -option caps:escape -option altwin:swap_alt_win &
 xsetroot -cursor_name left_ptr &
 
+# clipboard manager
+clipit &
+
 # disable screen blanking
-xset s off &
+xset s off && xset -dpms &
 
 # auto connect to VPN
 protonvpn-cli c -f &
