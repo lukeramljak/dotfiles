@@ -1,8 +1,8 @@
+# reload sxhkd
 super + Escape
     pkill -USR1 -x sxhkd
 
-# Screenshots
-
+# screenshot
 alt + shift + s
 	flameshot gui
 
@@ -10,17 +10,22 @@ alt + shift + s
 super + shift + x
     betterlockscreen -l blur
 
-# Rofi
-
+# rofi
 super + d
     $HOME/.config/rofi/launchers/type-1/launcher.sh
 
-# Application Launchers
-
+# application launchers
 super + {b,e,w,v}
     {bitwarden,thunar,firefox,codium}
 
-#Audio Keybindings
+# terminal
+super + Return
+    alacritty
+
+super + alt {h, n, r}
+    alacritty -e {htop, nvim, ranger}
+
+# audio
 
 XF86AudioRaiseVolume
     pactl set-sink-volume @DEFAULT_SINK@ +10%
@@ -40,10 +45,9 @@ XF86AudioNext
 XF86AudioPrev
     playerctl previous
 
-#i3 Specific Keybindings
+# i3 specific keybindings
 
 #movement
-
 super+{Left,Down,Up,Right}
     i3-msg focus {left,down,up,right}
 
@@ -66,7 +70,6 @@ super + a
     i3-msg focus parent
 
 # workspaces
-
 super + {1-9,0}
     i3-msg workspace {1-9,10}
 
@@ -90,11 +93,3 @@ super + shift + r
 
 super + ctrl + {h,j,k,l}
     i3-msg resize {grow width 1 px or 1 ppt, shrink height 1 px or 1 ppt, grow height 1 px or 1 ppt, shrink width 1 px or 1 ppt}
-
-
-
-super + Return
-    alacritty
-
-super + alt {h, n, r}
-    alacritty -e {htop, nvim, ranger}
