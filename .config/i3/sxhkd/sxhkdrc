@@ -14,7 +14,7 @@ super + shift + x
 super + d
     $HOME/.config/rofi/launchers/type-1/launcher.sh
 
-# application launchers
+# applications
 super + {b,e,w,v}
     {bitwarden,thunar,firefox,codium}
 
@@ -46,7 +46,6 @@ XF86AudioPrev
     playerctl previous
 
 # i3 specific keybindings
-
 #movement
 super+{Left,Down,Up,Right}
     i3-msg focus {left,down,up,right}
