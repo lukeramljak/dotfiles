@@ -16,7 +16,7 @@ super + d
 
 # applications
 super + {b,e,w,v}
-    {bitwarden,thunar,firefox,codium}
+    {$HOME/Applications/Bitwarden.AppImage, thunar, flatpak run org.mozilla.firefox, codium}
 
 # terminal
 super + Return
