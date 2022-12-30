@@ -85,30 +85,30 @@ key_bindings:
     }
 
 colors:
-  name: Count Von Count
-  author: Baskerville
+  name: vscode (dark)
+  author: senpai-10
   primary:
-    background: "#000000"
-    foreground: "#919191"
+    background: "#1E1E1E"
+    foreground: "#D4D4D4"
   cursor:
-    text: "#000000"
-    cursor: "#919191"
+    text: "#1d1f21"
+    cursor: "#cccccc"
   normal:
-    black: "#303030"
-    red: "#c10023"
-    green: "#a83334"
-    yellow: "#b51d2c"
-    blue: "#8c4b46"
-    magenta: "#7d534f"
-    cyan: "#9a413d"
-    white: "#c6c6c6"
+    black: "#000000"
+    red: "#cd3131"
+    green: "#0dbc79"
+    yellow: "#e5e510"
+    blue: "#2472c8"
+    magenta: "#bc3fbc"
+    cyan: "#11a8cd"
+    white: "#e5e5e5"
   bright:
-    black: "#5e5e5e"
-    red: "#ff8781"
-    green: "#ffa095"
-    yellow: "#ff948b"
-    blue: "#feb2aa"
-    magenta: "#ebbbb5"
-    cyan: "#ffaaa0"
-    white: "#ffffff"
-theme: Baskerville - Count Von Count
+    black: "#666666"
+    red: "#f14c4c"
+    green: "#23d18b"
+    yellow: "#f5f543"
+    blue: "#3b8eea"
+    magenta: "#d670d6"
+    cyan: "#29b8db"
+    white: "#e5e5e5"
+theme: vscode.dark
