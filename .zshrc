@@ -1,7 +1,6 @@
 # aliases
-alias pvpn='sudo protonvpn'
-alias reboot='/sbin/reboot'
-alias shutdown='/sbin/shutdown'
+alias pvpn='protonvpn'
+alias sudo='doas'
 
 # Changing "ls" to "exa"
 alias ls='exa -a --color=always --group-directories-first'  # all files and dirs
