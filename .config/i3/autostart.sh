@@ -15,7 +15,7 @@ flameshot &
 # kdeconnect-app &
 
 # misc
-/usr/bin/lxpolkit &
+lxqt-policykit-agent &
 numlockx &
 nitrogen --restore &
 dunst &
