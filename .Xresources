@@ -1,8 +1,8 @@
-Xft.dpi: 96
+Xft.dpi: 92
 Xcursor.theme: Bibata-Original-Classic
 Xft.antialias: true
 Xft.hinting: true
 Xft.autohint: false
-Xft.hintstyle: hintslight
+Xft.hintstyle: hintfull
 Xft.lcdfilter: lcddefault
 Xft.rgba: rgb
