@@ -50,4 +50,7 @@ xset s off && xset -dpms &
 # auto connect to VPN
 protonvpn-cli c -f &
 
+# start redshift
+redshift -l -31.93097:115.89486 &
+
 exec i3
