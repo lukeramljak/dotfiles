@@ -1,6 +1,5 @@
 # aliases
 alias pvpn='protonvpn'
-alias sudo='doas'
 
 # Changing "ls" to "exa"
 alias ls='exa -a --color=always --group-directories-first'  # all files and dirs
