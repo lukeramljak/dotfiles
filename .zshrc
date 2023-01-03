@@ -1,5 +1,6 @@
 # aliases
 alias pvpn='protonvpn'
+alias flatpak='flatpak --user'
 
 # Changing "ls" to "exa"
 alias ls='exa -a --color=always --group-directories-first'  # all files and dirs
@@ -44,6 +45,10 @@ fi
 
 if [ -d "/var/lib/flatpak/exports/bin/" ] ;
   then PATH="/var/lib/flatpak/exports/bin/:$PATH"
+fi
+
+if [ -d "$HOME/.local/share/flatpak/exports/bin" ] ;
+  then PATH="$HOME/.local/share/flatpak/exports/bin/:$PATH"
 fi
 
 if [ -d "$HOME/.config/spicetify" ] ;
