@@ -4,7 +4,7 @@ include $HOME/.config/i3/workspaces.conf
 exec_always --no-startup-id $HOME/.config/i3/autostart.sh
 set $mod Mod4
 floating_modifier $mod
-set $fm DP-2
+set $fm HDMI-0
 set $sm DP-0
 font pango:monospace 8
 force_xinerama no
