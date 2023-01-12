@@ -1,7 +1,6 @@
 {
   "layer": "top",
   "height": 32,
-  "width": 3840,
   "spacing": 1,
   "modules-left": [
     "wlr/workspaces"
