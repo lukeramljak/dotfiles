@@ -1,13 +1,14 @@
 {
   "layer": "top",
-  "position": "top",
-  "height": 30,
+  "height": 32,
   "width": 3840,
-  "spacing": 3,
+  "spacing": 1,
   "modules-left": [
     "wlr/workspaces"
   ],
-  "modules-center": [],
+  "modules-center": [
+    "hyprland/window"
+  ],
   "modules-right": [
     "pulseaudio",
     "cpu",
@@ -17,28 +18,24 @@
     "tray"
   ],
   "wlr/workspaces": {
-    "disable-scroll": true,
-    "all-outputs": true,
     "format": "{name}",
-    "format-icons": {
-      "1": "",
-      "2": "",
-      "3": "",
-      "4": "",
-      "5": "",
-      "urgent": "",
-      "focused": "",
-      "default": ""
-    }
+    "on-click": "activate",
+    "all-outputs": true,
+    "sort-by-number": true
+  },
+  "hyprland/window": {
+    "format": "{}",
+    "separate-outputs": true
   },
   "tray": {
-    "icon-size": 21,
-    "spacing": 10
+    "icon-size": 14,
+    "spacing": 5
   },
   "clock": {
+    "format": "{:%I:%M %p}",
     "timezone": "Australia/Perth",
     "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
-    "format-alt": "{:%Y-%m-%d}"
+    "format-alt": "{:%d/%m/%Y}"
   },
   "cpu": {
     "format": "{usage}% ",
@@ -84,11 +81,10 @@
       "portable": "",
       "car": "",
       "default": [
-        "",
         "",
         ""
       ]
     },
-    "on-click": "pavucontrol"
+    "on-click": "pavucontrol -t 3"
   }
 }
